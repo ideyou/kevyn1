@@ -1,0 +1,236 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+/* Corpo */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  color: #000000;
+  background-image: url(dia\ dificil.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Canvas sem interferir nos cliques */
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Container estilo Bootstrap */
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  
+}
+
+/* Centralização */
+.text-center {
+  text-align: center;
+}
+
+/* Avatar */
+.avatar {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  padding: 10px;
+  background: #000000;
+  box-shadow: 
+    0 0 10px #ff0000,
+    0 0 25px #db0000,
+    0 0 45px #c20000,
+    0 0 65px #bb0000,
+    0 0 90px rgba(255, 0, 0, 0.7);
+  transition: all 0.3s ease;
+}
+
+.avatar:hover {
+  padding: 12px;
+  box-shadow: 
+    0 0 15px #ff0000,
+    0 0 35px #a00000,
+    0 0 60px #000000,
+    0 0 90px #000000,
+    0 0 120px rgba(255, 0, 0, 0.9);
+  transform: scale(1.1);
+}
+
+/* Títulos */
+.title {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: solid#8c00ff;
+}
+
+/* Links */
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Botões estilo Bootstrap */
+.btn {
+  display: block;
+  padding: 10px;
+  text-decoration: rgb(17, 17, 17);
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* Variantes */
+
+.btn-primary {
+  background-color: #3dfd02;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: bold;
+  padding: 16px 36px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+
+  box-shadow: 
+    0 0 12px #00d30b,
+    0 0 28px #49fd02,
+    0 0 50px #4aff77,
+    0 0 75px rgba(2, 253, 86, 0.8);
+}
+
+.btn-primary:hover {
+  background-color: #15ff00;
+  box-shadow: 
+    o o 15px #fafafa,
+    0 0 15px #ffffff,
+    0 0 40px #f0f0f0, 
+    0 0 105px rgba(255, 255, 255, 0.95);
+  transform: scale(1.08);
+}
+
+.btn-secondary {
+  background-color: #ff0000;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 16px 36px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+
+  box-shadow: 
+    0 0 10px #ff0000,
+    0 0 25px #ff0000,
+    0 0 45px #ff3333,
+    0 0 70px rgba(255, 50, 50, 0.8);
+}
+
+.btn-secondary:hover {
+  box-shadow: 
+    0 0 15px #ffffff,
+    0 0 35px #ff0000,
+    0 0 65px #ff4444,
+    0 0 95px rgba(255, 70, 70, 0.9);
+  transform: scale(1.08);
+}
+.btn-dark {
+  background-color: #161616;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 16px 36px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+
+  box-shadow: 
+    0 0 15px #141414,
+    0 0 32px #0f0f0f,
+    0 0 55px #111111,
+    0 0 80px rgba(0, 0, 0, 0.75);
+}
+
+.btn-dark:hover {
+  background-color: #000000;
+  box-shadow: 
+    0 0 20px #5e5e5e,
+    0 0 40px #131313,
+    0 0 75px #080808,
+    0 0 115px rgba(0, 0, 0, 0.95);
+  transform: scale(1.08);
+}
+.btn-outline {
+  border: 1px solid ssss#fd0808;
+  background: transparent;
+}
+
+/* Hover */
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* Tema escuro */
+.dark-mode {
+  background-color: #000000;
+  color: #ffffff;
+  background-image: url(anime-moon-landscape.jpg);
+}
+
+.dark-mode .btn-outline {
+  color: #09ff00;
+  border-color: #00f08c;
+  background: transparent;
+  font-weight: bold;
+  padding: 16px 36px;
+  border-width: 2.5px;
+  border-style: solid;
+  border-radius: 10px;
+  cursor: pointer;
+  text-shadow: 0 0 12px #09ff00;
+
+  box-shadow: 
+    0 0 12px #09ff00,
+    0 0 28px #00f08c,
+    0 0 55px rgba(0, 240, 140, 0.7),
+    0 0 80px rgba(9, 255, 0, 0.5);
+}
+
+.dark-mode .btn-outline:hover {
+  background: rgba(0, 255, 80, 0.08);
+  border-color: #ffffff;
+  color: #ffffff;
+  box-shadow: 
+    0 0 20px #00ffaa,
+    0 0 45px #09ff00,
+    0 0 80px #00f08c,
+    0 0 120px rgba(0, 255, 100, 0.8);
+  transform: scale(1.08);
+}

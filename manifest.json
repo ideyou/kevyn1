@@ -1,0 +1,19 @@
+{
+  "id": "SPOTVYN",
+  "name": "Kevyn's Spotify",
+  "short_name": "Kevyn's Spotify",
+  "scope": "./",
+  "start_url": "./",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#0f0f0f",
+  "icons": [
+    {
+      "src": "kevyn.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ],
+  "app_name": "Kevyn's Spotify",
+  "description": "Minhas músicas preferidas. 🎧"
+}
